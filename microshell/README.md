@@ -2,12 +2,12 @@
 ##  Assignment 2 - Operating System
 #	   MICROSHELL   
 
-*/ What does this shell do ?
+### What does this shell do ?
 This shell performs the basic functionalities like traversing directories, listing directories,
 date, time, cat, echo, whoami, uname, su, executing a program in subshell, doesn't quit even after the subshell ends.
 
 
-*/ How does this shell do what it does ?
+### How does this shell do what it does ?
 This shell uses a few inbuilt libraries to implement functions like fork(), execvp(), signal(),wait().
 
 fork() : creates a child process.
@@ -36,18 +36,18 @@ exit() :  causes process termination.
 
 
 
-*/ How to compile this file ?
+### How to compile this file ?
 gcc -Wall -pedantic -static my_shell.c -o mysh
 
-*/ How to run this program ?
+### How to run this program ?
 ./mysh
 
-*/ How to exit out of this program ?
+### How to exit out of this program ?
 type "exit" or Ctrl + Z   (Note : Ctrl + C will not work. This works only to stop the running processes inside the program.)
 A very useful feature : 
     Disable signal SIGNAL in the parent: This means I can interrupt(Ctrl + C) a process without killing my shell.  
 
-*/ Some notable features :
+### Some notable features :
     * Add a visual prompt: $ for users and # for superusers.
     * Print the exit code of the child, e.g. <1> or <0>
     * Check for empty input: Because segfaulting is not nice.
