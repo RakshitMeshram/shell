@@ -1,0 +1,9 @@
+uname -a
+whoami
+date
+ls /
+pwd
+echo "Hello! this is my assignment 2 for Operating system." 
+
+echo "Thank You :) "
+exit
